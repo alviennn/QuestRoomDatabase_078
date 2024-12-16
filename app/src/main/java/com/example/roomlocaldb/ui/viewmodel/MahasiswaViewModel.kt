@@ -90,6 +90,7 @@ data class MahasiswaEvent(
     val alamat: String = "",
     val kelas: String = "",
     val angkatan: String = "",
+    val jurusan: String = ""
 )
 
 
@@ -100,5 +101,6 @@ fun MahasiswaEvent.toMahasiswaEntity(): Mahasiswa = Mahasiswa(
     jenisKelamin = jenisKelamin,
     alamat = alamat,
     kelas = kelas,
-    angkatan = angkatan
+    angkatan = angkatan,
+    jurusan = jurusan
 )
